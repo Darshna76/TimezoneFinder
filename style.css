@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.loader {
+    display: none;
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.container {
+    display: none;
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.time-zone {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.current {
+    margin-bottom: 5px;
+}
+
+.details {
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+}
+
+.lat-long {
+    display: flex;
+    /* gap: 18rem; */
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#address-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    margin-left: 1rem;
+    gap: 5px;
+    display: none;
+}
+
+#address-details>h4 {
+    margin: 0;
+}
+
+.api-key {
+    font-weight: 300;
+    font-size: 16px;
+    /* color: rgb(115, 209, 115); */
+    color: black;
+}
+
+#input-address {
+    background: black;
+    border: 1px solid #3a3838;
+    width: 95%;
+    color: white;
+    padding: 4px 8px;
+    outline: none;
+}
+
+#submit-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 5px 9px;
+    font-size: 14px;
+
+}
+
+#submit-btn:active {
+    background-color: gray;
+    border: none;
+    padding: 5px 12px;
+
+
+}
+
+.error {
+    color: red;
+    margin: 0;
+    margin-top: 2px;
+    display: none;
+    padding-left: 1rem;
+}
+
+.error1 {
+    color: red;
+    margin: 0;
+    margin-top: 2px;
+    display: none;
+    padding-left: 1rem;
+}
+
+.address-con {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    display: none;
+
+
+}
+
+.detail {
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    /* max-width: 200%; */
+
+}
+
+.result {
+    margin: 0;
+    margin-bottom: 1rem;
+}
